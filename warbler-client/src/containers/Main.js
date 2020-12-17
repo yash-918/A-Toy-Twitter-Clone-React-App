@@ -2,6 +2,7 @@ import React from "react";
 import {Switch,withRouter,Route,Redirect} from "react-router-dom";
 import {connect} from "react-redux";
 import Homepage from "../components/Homepage.js";
+// thsi main component have all the details;
 
 const Main=props=>{
     // console.log(Homepage);
