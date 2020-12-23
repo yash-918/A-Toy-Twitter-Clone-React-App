@@ -1,7 +1,6 @@
 import {ADD_ERROR,REMOVE_ERROR} from "../actionTypes.js";
 
-export default (state={message:null},action)=>
-{
+export default (state={message:null},action)=>{
     switch(action.type)
     {
         case(ADD_ERROR):

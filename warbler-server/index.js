@@ -10,9 +10,9 @@ const authRoutes= require("./routes/auth.js");
 const messageRoutes=require("./routes/messages.js");
 const {loginRequired,ensureCorrectUser}=require("./middleware/auth.js");
 
-app.use(cors);
+app.use(cors());
 app.use(bodyParser.json());
-
+ 
 app.use("/api/auth",authRoutes);
 app.use("/api/users/:id/messages",loginRequired,ensureCorrectUser,messageRoutes);
 // route to get all the messages
