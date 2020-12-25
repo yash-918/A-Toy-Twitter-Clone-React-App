@@ -1,6 +1,3 @@
-
-const Message=require("./message.js");
-
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 
